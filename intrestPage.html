@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intrest Calculation</title>
+        <link rel="stylesheet" href="intrestPage.css">
+    </head>
+    <body>
+        <div id="main">
+            <div class="Main">
+                <form>
+                    <label><b>Today Date</b></label>
+                    <input type="date" id="todaydate" placeholder="Enter Today's Date">
+                    <br>
+                    <label><b>Loan Approval Date</b></label>
+                    <input type="date" id="loandate" placeholder="Enter Loan Approved Date">
+                    <br>
+                    <label><b>Rate of Intrest</b></label>
+                    <input type="number" id="Intrest" placeholder="Enter Intrest percentage">
+                    <br>
+                    <label><b>Amount</b></label>
+                    <input type="number" id="amount" placeholder="Enter amount approved">
+                    <br>
+                    <button type="button" onclick="calIntrest()">Calculate</button>
+                    <br><br>
+                    <div id="result"></div>
+                </form>
+            </div>
+        </div>
+        <script src="intrestPage.js"></script>
+    </body>
+</html>
