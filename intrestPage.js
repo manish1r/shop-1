@@ -50,7 +50,7 @@ function calIntrest(){
     console.log("\n\nout 3 Intrest : "+intrest+" amount : "+amt+" yy="+yy+" mm="+mm+" dd="+dd);
     let total=intrest+aamt;
     document.getElementById("result").innerHTML=`
-        <b style='color:blue;'>Details of Loan   (Daily Intrest) --></b><br><br>
+        <b style='color:blue;'>Details of Loan   (Monthly Intrest) --></b><br><br>
         <b>The Total Days=${ddd} days ${mmm} months ${yyy} years</b><br>
         <b>Total Intrest : ${intrest.toFixed(3)}</b><br>
         <b>Total Amount to be paid : ${total.toFixed(3)}</b><br>
