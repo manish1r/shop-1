@@ -28,16 +28,16 @@ function calIntrest(){
     let aamt=amt;let ddd=dd;let mmm=mm;let yyy=yy;
     if(yes){
         while(yy>0){
+            if(yy===1&&mm===0){
+                mm=12;
+                break;
+            } 
             let z=12*((amt/100)*i);
             intrest+=(12*((amt/100)*i));
             amt+=12*((amt/100)*i);
             //  System.out.println("in Intrest : "+intrest+" amount : "+amt+" yy="+yy+" yearly:"+z);
             console.log("in Intrest : "+intrest+" amount : "+amt+" yy="+yy+" yearly:"+z);
             yy--;
-            if(yy===1&&mm===0){
-                mm=12;
-                break;
-            } 
         }
         console.log("\n\nout 1 Intrest : "+intrest+" amount : "+amt+" yy="+yy+" mm="+mm+" dd="+dd);
         // System.out.println("\n\nout 1 Intrest : "+intrest+" amount : "+amt+" yy="+yy);
