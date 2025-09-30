@@ -28,6 +28,7 @@ function calIntrest(){
     if(yes){
         while(yy>0){
             if(yy===1&&mm===0){
+                yy--;
                 mm=12;
                 break;
             } 
@@ -35,7 +36,7 @@ function calIntrest(){
             intrest+=(12*((amt/100)*i));
             amt+=12*((amt/100)*i);
             //  System.out.println("in Intrest : "+intrest+" amount : "+amt+" yy="+yy+" yearly:"+z);
-            console.log("in Intrest : "+intrest+" amount : "+amt+" yy="+yy+" yearly:"+z);
+            console.log("in Intrest : "+intrest+" amount : "+amt+" yy="+yy+" yearly:"+z+" mm"+mm+" dd="+dd);
             yy--;
         }
         console.log("\n\nout 1 Intrest : "+intrest+" amount : "+amt+" yy="+yy+" mm="+mm+" dd="+dd);
@@ -53,4 +54,5 @@ function calIntrest(){
         <b>Total Intrest : ${intrest.toFixed(3)}</b><br>
         <b>Total Amount to be paid : ${total.toFixed(3)}</b><br>
     `;
+
 }
