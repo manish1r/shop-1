@@ -27,8 +27,7 @@ function calIntrest(){
     let aamt=amt;let ddd=dd;let mmm=mm;let yyy=yy;
     if(yes){
         while(yy>0){
-            if(yy===1&&mm===0){
-                yy--;
+            if(yyy===1&&mmm===0){
                 mm=12;
                 break;
             } 
@@ -56,3 +55,4 @@ function calIntrest(){
     `;
 
 }
+
